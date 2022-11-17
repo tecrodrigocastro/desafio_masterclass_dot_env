@@ -16,6 +16,7 @@ Map<String, String> dotEnv() {
       map[lineBreak[0]] = lineBreak[1];
     }
   }
-  print(map['JWT_REFRESH_TOKEN_EXPIRESIN']);
+  print(map['DATABASE_URL']);
+  print(map);
   return map;
 }

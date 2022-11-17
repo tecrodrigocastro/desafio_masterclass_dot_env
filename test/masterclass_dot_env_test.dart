@@ -4,6 +4,7 @@ import 'package:test/test.dart';
 void main() {
   test('dot env service ...', () {
     final service = dotEnv();
-    expect(dotEnv(), 42);
+    expect(service['DATABASE_URL'],
+        '"postgresql://postgres:postgres@localhost:5432/fteam"');
   });
 }
